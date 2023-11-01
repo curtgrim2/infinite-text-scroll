@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+
+@keyframes topinfinitescroll{
+  0%{
+    transform:translateX(0%);
+  }
+  100%{
+    transform:translateX(-100%);
+  }
+}
+
+body{
+text-align: center;
+background-color:#0a3869;
+color:white;
+}
+
+.contain{
+background-color: black;
+white-space: nowrap;
+overflow:hidden;
+}
+
+.topinfinite{
+display: inline-block;
+font-size:25px;
+padding: 0 10%;
+animation: topinfinitescroll 8s infinite linear;
+}
+
+
+
+
+
+
+
+/*THE PREFERED WAY WITH IT FIXED AT THE BOTTOM (AND CAN POTENTIAL FIX THE TOP)*/
+.contain2{
+  position:fixed;
+  bottom:0;
+  background-color: black;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.bottominfinite{
+  font-size: 20px;
+  padding: 0 5%;
+  display:inline-block;
+  animation: topinfinitescroll 12s infinite linear;
+}
+
+/*.topinfinite p{
+  animation: topinfinitescroll 5s infinite linear;
+}*/
+
+</style>
+</head>
+<body>
+  <div class ="contain">
+  <div class="topinfinite">
+ (Top Text) For more info please see www.thisisntevenalink.com for more information
+  </div>
+
+   <div class="topinfinite">
+     (Top Text) For more info please see www.thisisntevenalink.com for more information
+    </div>
+  </div>
+   <br>
+  <h1> BABY...WHY DON'T YOU JUST MEET ME IN THE MIDDLE!?! </h1>
+
+<div class ="contain2">
+  <div class ="bottominfinite">I pretty much recalled this from the old NBA 2K MyTeam homepage menus and was reminded of it per the
+  Limited Run Games Website (Bottom Text)</div>
+  <div class ="bottominfinite">I pretty much recalled this from the old NBA 2K MyTeam homepage menus and was reminded of it per the
+  Limited Run Games Website (Bottom Text)</div>
+</div>
+</body>
+</html>
